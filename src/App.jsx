@@ -2,7 +2,8 @@ import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import HomePage from "./components/Home/HomePage.jsx";
-import backgroundMusic from "./assets/Music.mp3";
+import backgroundMusic from "./assets/BG-Music.mp3";
+import About from "./components/About/About.jsx";
 
 function App() {
   const [musicPlaying, setMusicPlaying] = useState(false);
@@ -43,9 +44,10 @@ function App() {
       </div>
 
       {/* Create an audio element with the ref */}
-      <audio ref={audioRef} src={backgroundMusic} />
+      <audio ref={audioRef} src={backgroundMusic} loop />
 
       <HomePage />
+      <About />
     </div>
   );
 }
