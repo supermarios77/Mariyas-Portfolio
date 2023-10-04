@@ -1,10 +1,9 @@
 import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
-import HomePage from "./components/Home/HomePage.jsx";
 import backgroundMusic from "./assets/BG-Music.mp3";
-import About from "./components/About/About.jsx";
-import Skills from "./components/Skills/Skills.jsx";
+import MainPage from './components/MainPage';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const [musicPlaying, setMusicPlaying] = useState(false);
@@ -47,11 +46,12 @@ function App() {
       {/* Create an audio element with the ref */}
       <audio ref={audioRef} src={backgroundMusic} loop />
 
-      <HomePage />
-      <About />
-      <Skills />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
