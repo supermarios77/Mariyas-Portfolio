@@ -1,0 +1,108 @@
+.express-icon {
+    background-color: white;
+    padding: 3px;
+    border-radius: 50%;
+}
+
+* {
+    font-family: "Poppins";
+}
+
+section {
+    margin-top: 15rem;
+    cursor: pointer;
+}
+
+.Header {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 24px;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.skill {
+    display: grid;
+    grid-gap: 16px;
+    padding: 16px;
+    margin-inline: auto;
+}
+
+.skill .set {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: hsla(0, 1%, 14%, 0.229);
+}
+
+.skill .set:hover {
+    box-shadow: 0px 12px 16px #01010124;
+}
+
+#title-icon {
+    width: 80px;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 40px;
+    color: white;
+    background-color: var(--basic-color);
+    border-radius: 35%;
+    margin-inline: auto;
+}
+
+.set header {
+    padding-block: 24px;
+    font-size: 24px;
+    text-align: center;
+    font-family: "Poppins";
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.set .list {
+    padding-block: 8px;
+    display: grid;
+    grid-template-columns: 1fr 28px;
+    text-transform: uppercase;
+}
+
+.set:hover .list label {
+    color: rgb(200, 194, 194);
+}
+
+#icon {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+}
+
+#icon:hover {
+    background: var(--basic-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border-radius: 20px;
+    color: white;
+    margin-inline: auto;
+}
+
+@media screen and (min-width: 600px) {
+    .skill {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    section  {
+        margin-top: 50rem;
+    }
+}

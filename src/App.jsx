@@ -4,6 +4,7 @@ import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import HomePage from "./components/Home/HomePage.jsx";
 import backgroundMusic from "./assets/BG-Music.mp3";
 import About from "./components/About/About.jsx";
+import Skills from "./components/Skills/Skills.jsx";
 
 function App() {
   const [musicPlaying, setMusicPlaying] = useState(false);
@@ -48,6 +49,7 @@ function App() {
 
       <HomePage />
       <About />
+      <Skills />
     </div>
   );
 }
