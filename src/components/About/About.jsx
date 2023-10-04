@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Lottie from "lottie-react";
 import Mars from "../../assets/Mars.json";
 import "./About.css";
@@ -7,12 +7,10 @@ const About = () => {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    // Delay showing the content for a smooth opening transition
     const timer = setTimeout(() => {
       setShowContent(true);
     }, 500);
 
-    // Clear the timer when the component unmounts
     return () => clearTimeout(timer);
   }, []);
 
@@ -22,21 +20,28 @@ const About = () => {
         <div className="left">
           <h2>About Me</h2>
           <p>
-            I'm Mariya Baig, a junior full-stack developer with a passion for
-            creating amazing web experiences. I love to bring ideas to life
-            through code and design. Let's explore the cosmos of web development
-            together!
+            👋 Hey there! I'm an 11-year-old junior full stack developer with a
+            passion for coding that started when I was just 7 and a half years
+            old. My journey began with Memo, where I started learning HTML. At
+            the age of 8, I delved into Python through Google's Grasshopper app.
+            Fast forward to 2022 when I was 10 and a half, and I embarked on a
+            remarkable journey by completing the Python 3 Bootcamp by Jose
+            Portilla. I wrapped it up in early 2023, at the ripe age of 11.
           </p>
           <p>
-            With a strong foundation in React, HTML, CSS, and JavaScript for the
-            frontend, and MongoDB, Node.js, and Express.js for the backend, I'm
-            well-equipped to tackle a wide range of web development projects.
+            🌟 My coding adventure continued as I explored the world of web
+            development with Angela Yu's Complete Web Developer Bootcamp 2023.
+            Angela's guidance helped me rekindle my HTML knowledge and build a
+            strong foundation from scratch. In August, I am currently immersed
+            in the world of machine learning with Daniel Bourke's TensorFlow
+            Developer Certificate course (ZTM).
           </p>
           <p>
-            Whether it's building interactive web applications or crafting
-            RESTful APIs, I'm always up for a challenge. I'm also familiar with
-            three.js for 3D graphics and animations, adding another dimension to
-            my skills.
+            🚀 While I enjoy Python and Machine Learning, my heart truly belongs
+            to web development. I'm always eager to learn and explore new
+            concepts. It's incredible to think how far I've come in just a few
+            short years. The coding journey is just beginning, and I can't wait
+            to see where it takes me! 🌐💻🚀
           </p>
           <button className="btn">Contact Me</button>
         </div>
