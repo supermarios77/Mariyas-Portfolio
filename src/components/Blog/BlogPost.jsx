@@ -15,19 +15,23 @@ const BlogPost = () => {
   return (
     <div className="blog-post">
 
-    <div className="post-image">
-      <img src={post.imageUrl} alt={post.title} />
-    </div>
+      <div className="post-header">
+        <div className="header-content post-container">
+          <a href="/blog" className="back-home">
+            Back To Home
+          </a>
 
-      <span className="postType">{post.type}</span>
+          <h2 className="header-title">{post.title}</h2>
 
-      <p>{post.date}</p>
+          <img src={post.imageUrl} alt={post.title} className="header-img" />
+        </div>
+      </div>
 
-      {/* <h1>{post.title}</h1>
+      <div className="post-content">
+        <h2 className="subheading">{post.subHeading}</h2>
+        <p className="post-text">{post.content}</p>
+      </div>
 
-      <p>{post.time}</p>
-
-      <p>{post.content}</p> */}
     </div>
   );
 };

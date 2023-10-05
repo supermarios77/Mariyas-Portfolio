@@ -196,3 +196,78 @@
   flex-wrap: wrap;
 }
 
+/* Post Page CSS */
+
+.blog-post {
+  cursor: pointer;
+}
+
+.post-header {
+  width: 100%;
+  height: 500px;
+  background: #211f1f;
+  min-height: 440px;
+  padding-top: 50px;
+}
+
+.post-container {
+  max-width: 800px;
+  margin: auto;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem !important;
+}
+
+.back-home {
+  color: var(--basic-color);
+  font-size: 0.9rem;
+}
+
+.header-title {
+  width: 90%;
+  font-size: 2.6rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.header-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.post-content {
+  margin-top: 10rem !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.subheading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.post-text {
+  font-size: 1rem;
+  line-height: 1.7rem;
+  margin: 1rem 0;
+  text-align: justify;
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header-img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
