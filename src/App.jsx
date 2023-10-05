@@ -4,6 +4,7 @@ import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import backgroundMusic from "./assets/BG-Music.mp3";
 import MainPage from './components/MainPage';
 import { Routes, Route } from "react-router-dom";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   const [musicPlaying, setMusicPlaying] = useState(false);
@@ -48,6 +49,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<MainPage />} />
+        <Route path="/blog" element={<Blog />} />
       </Routes>
     </div>
   );
