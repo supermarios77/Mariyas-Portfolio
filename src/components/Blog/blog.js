@@ -1,6 +1,8 @@
 const blogData = [
   {
     id: 1,
+    type: "Tech",
+    time: "1 Minute Read",
     title: "Example Blog Post 1",
     date: "October 1, 2023",
     content:
@@ -10,6 +12,8 @@ const blogData = [
   },
   {
     id: 2,
+    type: "Example",
+    time: "1 Minute Read",
     title: "Example Blog Post 2",
     date: "October 2, 2023",
     content:
@@ -19,6 +23,8 @@ const blogData = [
   },
   {
     id: 3,
+    type: "Example",
+    time: "1 Minute Read",
     title: "Example Blog Post 3",
     date: "October 3, 2023",
     content:
@@ -28,6 +34,8 @@ const blogData = [
   },
   {
     id: 4,
+    type: "Example",
+    time: "1 Minute Read",
     title: "Example Blog Post 4",
     date: "October 4, 2023",
     content:
@@ -37,6 +45,8 @@ const blogData = [
   },
   {
     id: 5,
+    type: "Example",
+    time: "1 Minute Read",
     title: "Example Blog Post 5",
     date: "October 5, 2023",
     content:
@@ -46,6 +56,8 @@ const blogData = [
   },
   {
     id: 6,
+    type: "Example",
+    time: "1 Minute Read",
     title: "Example Blog Post 6",
     date: "October 6, 2023",
     content:
@@ -55,6 +67,8 @@ const blogData = [
   },
   {
     id: 7,
+    type: "Example",
+    time: "1 Minute Read",
     title: "Example Blog Post 7",
     date: "October 7, 2023",
     content:
@@ -64,6 +78,8 @@ const blogData = [
   },
   {
     id: 8,
+    type: "Example",
+    time: "1 Minute Read",
     title: "Example Blog Post 8",
     date: "October 8, 2023",
     content:
@@ -73,6 +89,8 @@ const blogData = [
   },
   {
     id: 9,
+    type: "Example",
+    time: "1 Minute Read",
     title: "Example Blog Post 9",
     date: "October 9, 2023",
     content:
@@ -82,6 +100,8 @@ const blogData = [
   },
   {
     id: 10,
+    type: "Example",
+    time: "1 Minute Read",
     title: "Example Blog Post 10",
     date: "October 10, 2023",
     content:

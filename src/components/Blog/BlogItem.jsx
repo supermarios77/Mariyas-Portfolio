@@ -1,6 +1,6 @@
 import "./Blog.css";
 
-const BlogItem = ({ id, title, date, content, imageUrl }) => {
+const BlogItem = ({ id, title, date, time, content, imageUrl, type }) => {
   // Truncate the content if it's too long
   const maxLength = 200; // You can adjust this value to your preference
   const truncatedContent =
@@ -13,7 +13,8 @@ const BlogItem = ({ id, title, date, content, imageUrl }) => {
       </div>
 
       <div className="blog-text">
-        <span>{date}</span>
+        <span className="date">{date} / {time}</span>
+        <span className="type">{type}</span>
         <h3>{title}</h3>
         <p>{truncatedContent}</p>
         <a href={`/blog/${id}`}>Read more</a>

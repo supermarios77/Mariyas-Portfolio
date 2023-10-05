@@ -2,9 +2,10 @@ import { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faPause } from "@fortawesome/free-solid-svg-icons";
 import backgroundMusic from "./assets/BG-Music.mp3";
-import MainPage from './components/MainPage';
+import MainPage from "./components/MainPage";
 import { Routes, Route } from "react-router-dom";
 import Blog from "./components/Blog/Blog";
+import BlogPost from "./components/Blog/BlogPost.jsx";
 
 function App() {
   const [musicPlaying, setMusicPlaying] = useState(false);
@@ -50,10 +51,10 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogPost />} />
       </Routes>
     </div>
   );
 }
 
 export default App;
-
