@@ -59,37 +59,8 @@ a {
     text-decoration: none;
 }
 
-.music-button {
-  background: linear-gradient(
-    0deg,
-    var(--basic-color) 0%,
-    rgb(240, 79, 5) 100%
-  );
-  border: none;
-  border-radius: 50%;
-  color: #fff;
-  font-size: 24px;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.music-button.playing {
-  background-color: #e0ab24; /* Change color when music is playing */
-}
-
-.music-button:hover {
-  background: linear-gradient(
-    0deg,
-    rgb(255, 94, 0) 0%,
-    rgb(240, 60, 5) 100%
-  ); /* Change color on hover */
-}
-
-.container {
-  margin-top: 1rem;
-  margin-left: 1rem;
+li {
+  list-style: none;
 }
 
 /* --------- Reusable CSS --------- */

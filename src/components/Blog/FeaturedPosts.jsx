@@ -25,6 +25,8 @@ const FeaturedPosts = () => {
             date={post.date}
             content={post.content}
             imageUrl={post.imageUrl}
+            type={post.type}
+            time={post.time}
           />
         ))}
       </div>
