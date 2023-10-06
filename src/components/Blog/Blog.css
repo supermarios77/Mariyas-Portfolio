@@ -47,6 +47,11 @@
   margin: 20px;
 }
 
+.blog-item:hover {
+  width: 510px;
+  animation: button-push 0.3s;
+}
+
 .blog-img {
   width: 100%;
   height: auto;
@@ -77,6 +82,11 @@
   padding: 10px;
   width: 40%;
   border-radius: 4px;
+}
+
+.type:hover {
+  animation: button-push 0.3s linear 1;
+  background: -webkit-linear-gradient(#db4242, #d83e0f);
 }
 
 .blog-text h3 {

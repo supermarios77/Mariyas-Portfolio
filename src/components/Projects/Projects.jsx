@@ -20,7 +20,7 @@ const Projects = () => {
 
   return (
     <section className="project container section" id="project">
-      <h2 className="section__title">Recent Projects</h2>
+      <h2 className="section__title">My Projects</h2>
 
       <div className="project__filters">
         <span
