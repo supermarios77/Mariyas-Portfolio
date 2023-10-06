@@ -106,3 +106,29 @@ li {
 #Section {
   margin-bottom: 2rem;
 }
+
+.section__title {
+  font-size: 2.5rem;
+  margin-left: 0.875rem;
+  font-weight: bolder;
+  position: relative;
+  margin-bottom: 3.75rem;
+}
+
+.section__title::before {
+  content: '';
+  height: 2.25rem;
+  width: 2.25rem;
+  position: absolute;
+  left: -0.875rem;
+  top: -0.875rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.section {
+  padding-top: 7rem;
+  padding-bottom: 2rem;
+}

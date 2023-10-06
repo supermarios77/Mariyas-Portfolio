@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import BlogItem from "./BlogItem";
 import blogData from "./blog";
 import "./Blog.css";

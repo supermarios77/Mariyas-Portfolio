@@ -2,6 +2,7 @@ import HomePage from './Home/HomePage';
 import About from './About/About';
 import Skills from './Skills/Skills';
 import FeaturedPosts from './Blog/FeaturedPosts';
+import Projects from './Projects/Projects';
 
 const MainPage = () => {
   return (
@@ -10,6 +11,7 @@ const MainPage = () => {
         <About />
         <Skills />
         <FeaturedPosts />
+        <Projects />
     </div>
   )
 }
