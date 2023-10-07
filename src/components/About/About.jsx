@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Lottie from "lottie-react";
-import Mars from "../../assets/Mars.json";
+import Plant from "../../assets/Plant.json";
 import "./About.css";
 
 const About = () => {
@@ -47,8 +47,8 @@ const About = () => {
         </div>
         <div className="right">
           <Lottie
-            animationData={Mars}
-            className={`Mars ${showContent ? "animate" : ""}`}
+            animationData={Plant}
+            className={`Plant ${showContent ? "animate" : ""}`}
           />
         </div>
       </div>
