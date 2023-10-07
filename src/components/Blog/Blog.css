@@ -49,7 +49,6 @@
 
 .blog-item:hover {
   width: 510px;
-  animation: button-push 0.3s;
 }
 
 .blog-img {
