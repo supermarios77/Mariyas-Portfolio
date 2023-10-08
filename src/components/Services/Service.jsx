@@ -4,7 +4,7 @@ import { faPalette, faCode, faLaptopCode, faGamepad } from '@fortawesome/free-so
 
 const Services = () => {
   return (
-    <div className="services">
+    <div className="services" id="services">
       <h2>My Services</h2>
       <div className="service-container">
         <div className="service-box" style={{ backgroundColor: '#007acc' }}>
