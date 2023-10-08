@@ -43,7 +43,7 @@
 
 .blog-item {
   width: 500px;
-  background-color: hsl(0, 3%, 11%);
+  background-color: var(--container-color);
   margin: 20px;
 }
 

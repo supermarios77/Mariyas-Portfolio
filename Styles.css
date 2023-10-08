@@ -5,6 +5,9 @@
   --basic-color: hsl(18, 77%, 51%);
   --text-color: hsl(0, 25%, 98%);
   --body-color: hsl(0, 5%, 13%);
+  --container-color: hsl(0, 3%, 11%);
+  --light-container-color: hsl(0, 3%, 14%);
+  --input-bg-color: hsl(0, 3%, 15%);
 
   /* --------- Fonts --------- */
   --default-font: "Roboto", sans-serif;
