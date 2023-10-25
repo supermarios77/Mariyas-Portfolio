@@ -1,12 +1,31 @@
-import TeeFusion from "./project-images/TeeFusion.png";
-
 const projectData = [
     {
         key: 1,
-        title: "Tee Fusion 3D: Define Your Own Style",
-        link: "https://teefusion3d.vercel.app",
+        title: "Example Project",
+        link: "https://example.com/",
         category: "Website",
-        image: TeeFusion
+        image: "https://picsum.photos/500/300"
+    },
+    {
+        key: 2,
+        title: "Example Project",
+        link: "https://example.com/",
+        category: "Design",
+        image: "https://picsum.photos/500/300"
+    },
+    {
+        key: 3,
+        title: "Example Project",
+        link: "https://example.com/",
+        category: "Website",
+        image: "https://picsum.photos/500/300"
+    },
+    {
+        key: 4,
+        title: "Example Project",
+        link: "https://example.com/",
+        category: "Website",
+        image: "https://picsum.photos/500/300"
     }
 ]
 

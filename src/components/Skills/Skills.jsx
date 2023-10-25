@@ -1,11 +1,9 @@
-import "./Skills.css";
-import MongoIcon from "../../assets/MongoIcon.svg";
-import ExpressIcon from "../../assets/ExpressJS-Icon.svg";
+import "./Skills.css"
 
 const Skills = () => {
   return (
-    <section>
-      <header className="Header">Skills</header>
+    <section className="container section">
+      <header className="section__title">My Skills</header>
       <div className="skill">
 
         <div className="set">
@@ -40,18 +38,10 @@ const Skills = () => {
 
           <div className="list">
             <label>MongoDB</label>
-            <img src={MongoIcon} alt="MongoDB Icon" width="20rem" id="icon"/>
           </div>
 
           <div className="list">
             <label>ExpressJS</label>
-            <img
-              src={ExpressIcon}
-              alt="ExpressJS Icon"
-              width="20rem"
-              className="express-icon"
-              id="icon"
-            />
           </div>
 
           <div className="list">
@@ -80,7 +70,7 @@ const Skills = () => {
 
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

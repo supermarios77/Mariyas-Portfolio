@@ -1,137 +1,188 @@
-/* --------- CSS Variables --------- */
+/* ======== Google Fonts ======== */
+
+@import url('https://fonts.google.com/css2/?family=Rubik:wght@400;500;600;700&display=swap');
+
+/* ========= Variables CSS ======== */
 
 :root {
-  /* --------- Basic Colors (HSL) --------- */
-  --basic-color: hsl(18, 77%, 51%);
-  --text-color: hsl(0, 25%, 98%);
-  --body-color: hsl(0, 5%, 13%);
-  --container-color: hsl(0, 3%, 11%);
-  --light-container-color: hsl(0, 3%, 14%);
-  --input-bg-color: hsl(0, 3%, 15%);
 
-  /* --------- Fonts --------- */
-  --default-font: "Roboto", sans-serif;
-  --basic-font: "Montserrat", sans-serif;
+    /* ========= Colors  ======== */
 
-  /* --------- Typography --------- */
-  --h1-size: 5rem;
-  --h2-size: 2rem;
-  --h3-size: 1.5rem;
-  --text-size: 1rem;
+    --first-color: hsl(353, 100%, 65%);
+    --light-color: hsl(39, 89%, 53%);
+    --second-color: hsl(43, 100%, 68%);
+    --third-color: hsl(272, 27%, 19%);
+    --title-color: hsl(244, 24%, 26%);
+    --text-color: hsl(244, 16%, 43%);
+    --body-color: hsl(258, 60%, 98%);
+    --copyright-color: hsl( 245, 15%, 65%);
+    --container-color: #fff;
+
+    /* ========= Font And Typography ======== */
+
+    --body-font: 'Rubik', sans-serif;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
+
+    /* ========= Font Weight ======== */
+
+    --font-medium: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    /* ========= Box Shadow ======== */
+
+    --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+
+    /* ========= Border Radius ======== */
+
+    --border-radius: 20px;
 }
 
 /* Media Query Typography For Smaller Screens */
 
 @media (max-width: 600px) {
-  :root {
-    /* --------- Typography --------- */
-    --h1-size: 2.5rem;
-    --h2-size: 1.25rem;
-    --h3-size: 1rem;
-    --text-size: 0.78rem;
+    :root {
+      /* --------- Typography --------- */
+      --h1-size: 2.25rem;
+      --h2-size: 1.5rem;
+      --h3-size: 1.25rem;
+      --normal-font-size: 1rem;
+      --small-font-size: 0.875rem;
+      --smaller-font-size: 0.813rem;
+    }
   }
-}
 
-/* --------- Basic Styles --------- */
-
-body {
-  background-color: var(--body-color);
-  font-family: var(--default-font);
-  color: var(--text-color);
-}
+/* ========= Base ======== */
 
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-button {
-  cursor: pointer;
-  border: none;
-  outline: none;
+html {
+    scroll-behavior: smooth;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
+body,
+button,
+input,
+textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+
+body {
+    background-color: var(--body-color);
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+h1,
+h2 h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+    line-height: 1.2;
+}
+
+ul {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
 }
 
-li {
-  list-style: none;
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
-/* --------- Reusable CSS --------- */
-
-.btn {
-  background: linear-gradient(
-    0deg,
-    var(--basic-color) 0%,
-    rgb(240, 79, 5) 100%
-  );
-  padding: 0.75rem 2rem;
-  line-height: 1;
-  border-radius: 1.875rem;
-  color: #fff;
-  display: inline-block;
-  border: 1px solid transparent;
-  text-decoration: none;
-  color: var(--text-color);
-  font-size: var(--text-size);
-  background-color: var(--basic-color);
-  font-weight: bold;
-  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
 
-@keyframes button-push {
-  50% {
-    transform: scale(0.8);
-  }
+/* ========= Reuseable CSS Classes ======== */
 
-  100% {
-    transform: scale(1);
-  }
-}
-
-.btn:hover {
-  animation: button-push 0.3s linear 1;
-  box-shadow: 4px 4px 6px 0 rgba(53, 51, 51, 0.5),
-    -4px -4px 6px 0 rgba(50, 58, 67, 0.5),
-    inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-}
-
-#Section {
-  margin-bottom: 2rem;
-}
-
-.section__title {
-  font-size: 2.5rem;
-  margin-left: 0.875rem;
-  font-weight: bolder;
-  position: relative;
-  margin-bottom: 3.75rem;
-}
-
-.section__title::before {
-  content: '';
-  height: 2.25rem;
-  width: 2.25rem;
-  position: absolute;
-  left: -0.875rem;
-  top: -0.875rem;
+.container {
+    max-width: 1080px;
+    padding-left: 15rem;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .grid {
-  display: grid;
+    display: grid;
 }
 
 .section {
-  padding-top: 7rem;
-  padding-bottom: 2rem;
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+.section__title {
+    font-size: var(--h1-font-size);
+    margin-left: 0.875rem;
+    font-weight: var(--font-bold);
+    position: relative;
+    margin-bottom: 3.75rem;
+    color: var(--title-color);
+}
+
+.section__title::before {
+    content: '';
+    background-image: url('./src/assets/dots-bg.svg');
+    height: 2.25rem;
+    width: 2.5em;
+    position: absolute;
+    left: -0.875rem;
+    top: -0.875rem;
+}
+
+.btn {
+    background: linear-gradient(0deg,
+            var(--first-color) 0%,
+            hsl(353, 59%, 56%) 100%);
+    padding: 0.75rem 2rem;
+    line-height: 1;
+    border-radius: 1.875rem;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid transparent;
+    text-decoration: none;
+    color: white;
+    font-size: var(--text-size);
+    background-color: var(--first-color);
+    font-weight: bold;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+}
+
+@keyframes button-push {
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btn:hover {
+    animation: button-push 0.3s linear 1;
+    box-shadow: 4px 4px 6px 0 rgba(53, 51, 51, 0.5),
+        -4px -4px 6px 0 rgba(50, 58, 67, 0.5),
+        inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2),
+        inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+}
+
+.main {
+    margin-left: 110px;
 }

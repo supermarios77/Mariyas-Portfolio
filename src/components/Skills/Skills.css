@@ -1,26 +1,4 @@
-.express-icon {
-    background-color: white;
-    padding: 3px;
-    border-radius: 50%;
-}
-
-* {
-    font-family: "Poppins";
-}
-
 section {
-    margin-top: 15rem;
-    cursor: pointer;
-}
-
-.Header {
-    font-size: 3rem;
-    text-transform: uppercase;
-    text-align: center;
-    padding: 24px;
-    color: white;
-    font-family: "Montserrat";
-    font-weight: 500;
     cursor: pointer;
 }
 
@@ -29,17 +7,22 @@ section {
     grid-gap: 16px;
     padding: 16px;
     margin-inline: auto;
+    color: rgb(41, 40, 45);
 }
 
 .skill .set {
     padding: 2rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    background-color: hsla(0, 1%, 14%, 0.229);
+    background-color: rgb(255, 76, 96);
 }
 
 .skill .set:hover {
     box-shadow: 0px 12px 16px #01010124;
+}
+
+.set:nth-child(2) {
+    background-color: rgb(231, 172, 23);
 }
 
 #title-icon {
@@ -59,7 +42,6 @@ section {
     padding-block: 24px;
     font-size: 24px;
     text-align: center;
-    font-family: "Poppins";
     font-weight: 900;
     text-transform: capitalize;
 }
@@ -72,7 +54,7 @@ section {
 }
 
 .set:hover .list label {
-    color: rgb(200, 194, 194);
+    color: rgb(35, 28, 28);
 }
 
 #icon {
@@ -82,7 +64,7 @@ section {
 }
 
 #icon:hover {
-    background: var(--basic-color);
+    background: var(--first-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -101,5 +83,9 @@ section {
 @media screen and (max-width: 600px) {
     .skill {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    section {
+        margin-top: 50rem;
     }
 }
