@@ -1,32 +1,21 @@
+import project1 from "../../assets/Project-1.png";
+import project2 from "../../assets/project-2.png";
+
 const projectData = [
     {
         key: 1,
-        title: "Example Project",
-        link: "https://example.com/",
+        title: "TeeFusion3D",
+        link: "https://teefusion3d.vercel.app",
         category: "Website",
-        image: "https://picsum.photos/500/300"
+        image: project1
     },
     {
         key: 2,
-        title: "Example Project",
-        link: "https://example.com/",
-        category: "Design",
-        image: "https://picsum.photos/500/300"
+        title: "Karak Chai",
+        link: "https://karak-chai.vercel.app",
+        category: "Client Projects",
+        image: project2
     },
-    {
-        key: 3,
-        title: "Example Project",
-        link: "https://example.com/",
-        category: "Website",
-        image: "https://picsum.photos/500/300"
-    },
-    {
-        key: 4,
-        title: "Example Project",
-        link: "https://example.com/",
-        category: "Website",
-        image: "https://picsum.photos/500/300"
-    }
 ]
 
 export default projectData

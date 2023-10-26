@@ -41,7 +41,7 @@
 }
 
 .home__social-link:hover {
-    color: var(--second-color)
+    color: var(--second-color);
 }
 
 .scroll__down {
