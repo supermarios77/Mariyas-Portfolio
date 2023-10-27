@@ -18,6 +18,7 @@ const LatestPosts = () => {
 
         {latestPosts.map((post) => (
           <BlogCard 
+            id={post.id}
             category={post.category}
             author={post.author}
             title={post.title}

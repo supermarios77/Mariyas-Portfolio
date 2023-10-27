@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import "../../../Styles.css";
 import "./Blog.css";
 import  { useState } from "react";
@@ -14,9 +15,9 @@ const Blog = () => {
 
   const filteredPosts = blogData.filter((post) => {
     if (filter === "all") {
-      return true; // Show all posts when "All" is selected
+      return true; 
     } else {
-      return post.type === filter;
+      return post.category === filter;
     }
   });
 
@@ -34,11 +35,11 @@ const Blog = () => {
           All
         </span>
         <span
-          className={`filter-item ${filter === "Design" ? "active-filter" : ""}`}
+          className={`filter-item ${filter === "Web Design" ? "active-filter" : ""}`}
           data-filter="design"
-          onClick={() => handleFilterClick("Design")}
+          onClick={() => handleFilterClick("Web Design")}
         >
-          Design
+          Web Design
         </span>
         <span
           className={`filter-item ${filter === "Python" ? "active-filter" : ""}`}
@@ -50,7 +51,7 @@ const Blog = () => {
         <span
           className={`filter-item ${filter === "Web Development" ? "active-filter" : ""}`}
           data-filter="web-dev"
-          onClick={() => handleFilterClick("Web Development")}
+          onClick={() => handleFilterClick("Web Dev")}
         >
           Web Development
         </span>
@@ -65,7 +66,9 @@ const Blog = () => {
 
       <div className="blog__container grid">
         {filteredPosts.map((post) => (
+          
           <BlogCard
+            id={post.id}
             title={post.title}
             date={post.date}
             author={post.author}

@@ -85,3 +85,64 @@
     border-radius: var(--border-radius);
     color: var(--title-color);
 }
+
+.post__title {
+    font-size: var(--h1-font-size);
+    margin-left: 0.875rem;
+    font-weight: var(--font-bold);
+    position: relative;
+    margin-bottom: 1rem;
+    color: var(--title-color);
+}
+
+.post__title::before {
+    content: '';
+    background-image: url('../../assets/dots-bg.svg');
+    height: 2.25rem;
+    width: 2.5em;
+    position: absolute;
+    left: -0.875rem;
+    top: -0.875rem;
+}
+
+.post__summary {
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    font-size: var(--small-font-size);
+    margin-left: 0.875rem;
+    font-weight: var(--font-semibold);
+}
+
+.post__details {
+    font-weight: var(--font-bold);
+    color: var(--title-color);
+    background-color: var(--second-color);
+    width: 35%;
+    margin-left: 0.50rem;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    transition: .3s;
+}
+
+.post__details:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    background-color: var(--light-color);
+}
+
+.post__img {
+    border-radius: var(--border-radius);
+    transition: .3s;
+}
+
+.post__img:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.Section {
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+}
