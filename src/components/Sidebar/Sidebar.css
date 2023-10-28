@@ -46,3 +46,13 @@
 .nav__link:hover a {
     transform: translateX(-5px);
 }
+
+.nav__toggle {
+    position: fixed;
+    top: 1.25rem;
+    left: 1.875rem;
+}
+
+@media screen {
+    
+}
