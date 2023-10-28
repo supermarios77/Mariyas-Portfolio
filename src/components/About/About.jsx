@@ -21,7 +21,7 @@ const About = () => {
             through code and design
           </p>
 
-          <a href="#contact" className="btn">Check Out My Projects</a>
+          <a href="#projects" className="btn">Check Out My Projects</a>
 
           </div>
 
