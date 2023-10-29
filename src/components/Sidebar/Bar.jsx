@@ -1,14 +1,17 @@
 import "./Sidebar.css";
 import Logo from "../../assets/PFP.png";
+import { useState } from "react";
 
 const SideBar = () => {
+
+  const [toggle, showMenu] = useState(false);
 
   const copyright = new Date().getFullYear();
   const copyright_end = copyright + 3;
 
   return (
     <>
-      <aside className="aside">
+      <aside className={toggle ? "aside show-menu" : "aside"}>
 
         <a href="#home" className="nav__logo">
           <img src={Logo} alt="logo" />
@@ -72,11 +75,10 @@ const SideBar = () => {
 
       </aside>
 
-      <div className="nav__toggle">
+      <div className={toggle ? "nav__toggle nav__toggle-open" : "nav__toggle"} onClick={() => showMenu(!toggle)}>
 
         <i className="icon-menu"></i>
 
-        
       </div>
     </>
   )

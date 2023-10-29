@@ -31,3 +31,40 @@
     background-color: var(--third-color);
     border-radius: 50%;
 }
+
+@media screen and (max-width: 1024px){
+    .about__container {
+        grid-template-columns: 720px;
+        justify-content: center;
+        display: flex;
+        row-gap: 1.875rem;
+    }
+
+    .about__data::before {
+        border-right: 10px solid transparent;
+        border-left: 10px solid transparent;
+        border-bottom: 10px solid #fff;
+        left: 49%;
+        top: -20px;
+    }
+
+    .about_img {
+       width: 200px;
+       height: 200px;
+       justify-self: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about__container {
+        grid-template-columns: 350px;
+    }
+
+    .about__data::before {
+        left: 47%
+    }
+    .about__data {
+        grid-template-columns: 1fr;
+        row-gap: 1.875rem;
+    }
+}

@@ -14,7 +14,8 @@ section {
     padding: 2rem;
     border-radius: 0.5rem;
     cursor: pointer;
-    background-color: rgb(255, 76, 96);
+    background-color: rgb(249, 123, 139);
+    color: #fff;
 }
 
 .skill .set:hover {
@@ -22,7 +23,7 @@ section {
 }
 
 .set:nth-child(2) {
-    background-color: rgb(231, 172, 23);
+    background-color: rgb(108, 108, 229);
 }
 
 #title-icon {
@@ -53,9 +54,6 @@ section {
     text-transform: uppercase;
 }
 
-.set:hover .list label {
-    color: rgb(35, 28, 28);
-}
 
 #icon {
     font-size: 28px;

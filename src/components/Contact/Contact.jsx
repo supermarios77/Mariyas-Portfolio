@@ -41,11 +41,6 @@ function Contact() {
           <Lottie animationData={ContactIllustration} className="contact-animation" />
         </div>
       </div>
-      <div className="social-icons">
-        <a href="https://github.com/supermarios77">
-          <i className="fa fa-github"></i>
-        </a>
-      </div>
     </div>
   );
 }

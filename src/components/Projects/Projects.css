@@ -111,3 +111,25 @@
 .project__card:hover .project__mask {
     opacity: 1;
 }
+
+@media screen and (max-width: 1024px) {
+    .project__filters {
+        justify-content: center;
+    }
+
+    .project__container {
+        grid-template-columns: repeat(2, 330px);
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+ }
+
+ @media screen and (max-width: 790px) {
+    .project__container {
+        grid-template-columns: 310px;
+    }
+
+    .project__filters {
+        row-gap: .25rem;
+    }
+ }

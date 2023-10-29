@@ -94,30 +94,6 @@
     margin-top: 50px;
 }
 
-.social-icons {
-    position: absolute;
-    right: -50px;
-    bottom: 50px;
-    width: 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 25px;
-    align-items: center;
-    border-bottom-right-radius: 30px;
-    color: var(--text-color);
-    background-color: var(--first-color);
-    padding: 20px;
-}
-
-.social-icons a {
-    text-decoration: none;
-    color: var(--text-color);
-}
-
-.social-icons a:hover {
-    color: var(--third-color);
-}
 
 @media screen and (max-width: 768px) {
     .contact {
@@ -128,14 +104,5 @@
     .left,
     .right {
         width: 100%
-    }
-    .social-icons {
-        position: relative;
-        top: 0;
-        bottom: 0;
-        width: 100%;
-        max-width: 200px;
-        flex-direction: row;
-        justify-content: space-between;
     }
 }
