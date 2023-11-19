@@ -21,9 +21,9 @@ const data = [
         id: 3,
         category: "education",
         icon: "icon-graduation",
-        year: "2023 August - Present",
+        year: "2023 August 17 - 2023 November 17",
         title: "TensorFlow Developer Certficate In 2023",
-        description: "Currently taking the TensorFlow Developer Certficate In 2023 course from Zero To Mastery : Daniel Bourke"
+        description: "Completed the TensorFlow Developer Certficate In 2023 course from Zero To Mastery : Daniel Bourke"
     },
     {
         index: 1,
