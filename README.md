@@ -4,7 +4,7 @@ Hey there! Welcome to my portfolio's github repository! 👋 I'm [Your Name], a 
 
 ## 🌟 About Me
 
-I'm a 12-year-old programming prodigy with a passion for Python, React, and all things tech! 🧑‍💻 When I'm not coding, you'll probably find me playing video games 🎮 or brainstorming my next big project idea! 💡
+I'm a 12-year-old programmer with a passion for Python, Machine Learning, Web Development, and all things tech! 🧑‍💻 When I'm not coding, you'll probably find me playing video games 🎮 or brainstorming my next big project idea! 💡
 
 ## 💼 My Projects
 
@@ -17,7 +17,7 @@ Feel free to check them out and let me know what you think! Feedback is always w
 
 I'm proficient in a variety of technologies, including:
 
-- Frontend: React, HTML, CSS, JavaScript, jQuery
+- Frontend: React, NextJS, HTML, CSS, JavaScript, jQuery
 - Backend: MongoDB, Node.js, Express.js, EJS, RESTful APIs
 - Machine Learning: TensorFlow (Certified Developer 🏅)
 
